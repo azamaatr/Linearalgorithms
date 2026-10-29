@@ -15,9 +15,9 @@ print(round(5.89))</code></pre></div><div class="output"><small>НӘТИЖЕ</sm
 b = float(input())
 c = float(input())
 
-numerator = abs(a + 2*c)
-denominator = b**2 + 3*a*c
-y = numerator / denominator * a * (3 + (4 - a**2))
+alym = abs(a + 2 * c)
+bolim = b**2 + 3 * a * c
+y = alym / bolim * a * (3 + (4 - a**2))
 
 print(y)</code></pre></div><p><code>float(input())</code> нақты санды енгізуге мүмкіндік береді. a, b, c мәндерін бөлек жолдарға енгіземіз.</p><div class="tablewrap"><table><thead><tr><th>Қадам</th><th>a = 4, b = 5, c = 1 үшін</th></tr></thead><tbody><tr><td>Алым</td><td>|4 + 2 × 1| = 6</td></tr><tr><td>Бөлім</td><td>5² + 3 × 4 × 1 = 37</td></tr><tr><td>Соңғы жақша</td><td>3 + (4 − 4²) = −9</td></tr><tr><td>Өрнек</td><td>(6 / 37) × 4 × (−9) = −216 / 37</td></tr></tbody></table></div><div class="output"><small>НӘТИЖЕ</small><pre>-5.837837837837839</pre></div><h3>Мәндерді өзгертіп есепте</h3><div class="fields"><div class="field"><label for="formulaA">a</label><input id="formulaA" type="number" step="any" value="4"></div><div class="field"><label for="formulaB">b</label><input id="formulaB" type="number" step="any" value="5"></div><div class="field"><label for="formulaC">c</label><input id="formulaC" type="number" step="any" value="1"></div></div><div class="trace" id="formulaResult" aria-live="polite"></div><label class="readmark"><input type="checkbox" data-chapter="3"> Бұл бөлімді оқып, түсіндім</label></section><section class="chapter" id="chapter4"><div class="kicker">04 / ОҚУ БӨЛІМІ</div><h2>Блок-схема</h2><p class="lead">Блок-схема алгоритмнің әрекеттерін көрнекі түрде көрсетеді.</p><p>Есеп: қабырғалары a және b болатын тіктөртбұрыштың периметрін табу. Формула: <strong>P = 2 × (a + b)</strong>.</p><div class="flowlayout"><div class="flow" aria-label="Басы, a және b енгізу, периметрді есептеу, P шығару, соңы"><div class="flowblock terminal" data-flow="0">Басы</div><div class="arrow">↓</div><div class="flowblock io" data-flow="1"><span>a, b енгізу</span></div><div class="arrow">↓</div><div class="flowblock" data-flow="2">P = 2 × (a + b)</div><div class="arrow">↓</div><div class="flowblock io" data-flow="3"><span>P шығару</span></div><div class="arrow">↓</div><div class="flowblock terminal" data-flow="4">Соңы</div></div><div><h3>Сәйкес программа</h3><div class="codebox"><div class="codehead"><span>Python 3</span><button class="copy">Көшіру</button></div><pre><code>a = int(input())
 b = int(input())
